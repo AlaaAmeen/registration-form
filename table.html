@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="UTF-8"/>
+            <title>Registration</title>
+            <link rel="stylesheet" href="style2.css"/>
+            <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Sedgwick+Ave|Shadows+Into+Light|Varela+Round"
+                  rel="stylesheet">
+            <link rel="shortcut icon" href="reg.png" type="x-icon">
+
+        </head>
+        <body onload="init()">
+         <div class="container">
+            <header class="topbar">Registration</header>
+            <aside class="leftbar">
+                <form id="log">
+                    <form >
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" placeholder="Enter Your First Name" id="firstname" autofocus="on" required/>
+                    </form>
+                    <br/>
+                    <form>
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" placeholder="Enter Your Last Name" id="lastname" required />
+                    </form>
+                    <br/>
+                    <form>
+                        <label for="age">Age</label>
+                        <input type="text" name="age" placeholder="Enter Your Age" id="age" required />
+                    </form>
+                    <br/>
+                    <form >
+                        <label for="tele">Phone Number</label>
+                        <input type="text" name="tele" placeholder="Enter Your Number" id="tele" required/>
+                    </form>
+                    <br/>
+                    <form>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" placeholder="Enter Your Address" id="address" required />
+                    </form>
+                    <img src="reg.png" alt="registration"/>
+                    <button id="submit" onclick="onRegister();">Register</button
+                </form>
+            </aside>
+            <aside class="rightbar">
+                <table id="regtable" class="regtable">
+                    <thead>
+                        <th id="no">No.</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Age</th>
+                        <th>Phone Number</th>
+                        <th>Address</th>
+                    </thead>
+                </table>
+            </aside>
+            <div class="clear"></div>
+            <footer >Copyright &copy; 2017 All Right Reserved To Alaa Amin</footer>
+         </div>
+         
+         <script src="main2.js"></script>
+       <!-- <script src="main3.js"></script> -->
+    
+        </body>
+    </html>
